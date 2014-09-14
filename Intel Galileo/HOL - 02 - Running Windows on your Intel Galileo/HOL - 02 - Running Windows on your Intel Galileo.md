@@ -214,11 +214,12 @@ We are ready to boot the Galileo up to windows.  You'll your Galileo, Power Supp
 
 	![04030-Connections](images/04030-connections.png?raw=true "04030-Connections")
 	
+1. **AFTER THE GALILEO HAS BOOTED (THE SD LIGHT CARD STOPS FLICKERING) CYCLE THE POWER ON YOUR GALILEO BY UNPLUGGING IT, THEN PLUGGING IT BACK IN AGAIN.**  WHY? Well, there is a known issue with the Galileo not "announcing" itself on the network the first time it boots.  Doing the power-cycle now increases your odds of the **"Galileo Watcher"** (which we are about to run) being able to see you Galileo.  If the Galileo isn't announcing it self, the Galileo Watcher can't see it.  The power-cycle is to help overcome a bug in the software on the Galileo that prevents it from announcing itself on the first boot.  
+
+	
 1. Once the Galileo has booted, run the **"GalieoWatcher.exe"** that was installed on your PC previously when we [installed the **"Windows Developer Program for IoT - Microsoft Installer (MSI)"** in Task 3](#InstallMSI):
 
-1. **AFTER THE GALILEO HAD BOOTED (THE SD LIGHT CARD STOPS FLICKERING) CYCLE THE POWER ON YOUR GALILEO BY UNPLUGGING IT, THEN PLUGGING IT BACK IN AGAIN.**  WHY? Well, there is a known issue with the Galileo not "announcing" itself on the network the first time it boots.  Doing the power-cycle now increases your odds of the **"Galileo Watcher"** (which we are about to run) being able to see you Galileo.  If the Galileo isn't announcing it self, the Galileo Watcher can't see it.  The power-cycle is to help overcome a bug in the software on the Galileo that prevents it from announcing itself on the first boot.  
-
-	![04040-RunGalileoWatcher](images/04040-rungalileowatcher.png?raw=true "Run Galileo Watcher")
+![04040-RunGalileoWatcher](images/04040-rungalileowatcher.png?raw=true "Run Galileo Watcher")
 
 1. The first time you run it, you should be prompted to allow **GalileoWatcher.exe** to communicate with the network.  You likely want to permit this on all networks.  If you are concerned with that, be more restrictive.  Make sure to at least enable private networks:
 

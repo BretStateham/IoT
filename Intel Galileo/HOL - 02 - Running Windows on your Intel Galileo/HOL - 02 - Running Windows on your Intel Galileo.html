@@ -256,11 +256,14 @@ body{font-family:helvetica, arial, freesans, clean, sans-serif;color:#333;line-h
 </blockquote>
 <p><img src="images/04030-connections.png?raw=true" alt="04030-Connections" title="04030-Connections">
 </p></li>
+<li><p><strong>AFTER THE GALILEO HAS BOOTED (THE SD LIGHT CARD STOPS FLICKERING) CYCLE THE POWER ON YOUR GALILEO BY UNPLUGGING IT, THEN PLUGGING IT BACK IN AGAIN.</strong>  WHY? Well, there is a known issue with the Galileo not &quot;announcing&quot; itself on the network the first time it boots.  Doing the power-cycle now increases your odds of the <strong>&quot;Galileo Watcher&quot;</strong> (which we are about to run) being able to see you Galileo.  If the Galileo isn't announcing it self, the Galileo Watcher can't see it.  The power-cycle is to help overcome a bug in the software on the Galileo that prevents it from announcing itself on the first boot.  </p></li>
 <li><p>Once the Galileo has booted, run the <strong>&quot;GalieoWatcher.exe&quot;</strong> that was installed on your PC previously when we <a href="#InstallMSI">installed the <strong>&quot;Windows Developer Program for IoT - Microsoft Installer (MSI)&quot;</strong> in Task 3</a>:</p></li>
-<li><p><strong>AFTER THE GALILEO HAD BOOTED (THE SD LIGHT CARD STOPS FLICKERING) CYCLE THE POWER ON YOUR GALILEO BY UNPLUGGING IT, THEN PLUGGING IT BACK IN AGAIN.</strong>  WHY? Well, there is a known issue with the Galileo not &quot;announcing&quot; itself on the network the first time it boots.  Doing the power-cycle now increases your odds of the <strong>&quot;Galileo Watcher&quot;</strong> (which we are about to run) being able to see you Galileo.  If the Galileo isn't announcing it self, the Galileo Watcher can't see it.  The power-cycle is to help overcome a bug in the software on the Galileo that prevents it from announcing itself on the first boot.  </p>
+</ol>
 
 <p><img src="images/04040-rungalileowatcher.png?raw=true" alt="04040-RunGalileoWatcher" title="Run Galileo Watcher">
-</p></li>
+</p>
+
+<ol>
 <li><p>The first time you run it, you should be prompted to allow <strong>GalileoWatcher.exe</strong> to communicate with the network.  You likely want to permit this on all networks.  If you are concerned with that, be more restrictive.  Make sure to at least enable private networks:</p>
 
 <p><img src="images/04050-allownetworkcommunication.png?raw=true" alt="04050-AllowNetworkCommunication" title="Allow Network Communication">
