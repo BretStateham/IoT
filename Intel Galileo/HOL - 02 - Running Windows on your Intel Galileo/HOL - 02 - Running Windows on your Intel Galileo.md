@@ -413,6 +413,7 @@ Now that our Galileo is setup and running windows, we can use Visual Studio to w
 	}
 	````
 
+	> **Note:** There is a completed Visual Studio Solution you can use in the **.\End\HelloGalileo** folder for this lab. 
 
 1. Ok, let's run it.  In the Visual Studio 2013 toolbar, click the **"Remote Windows Debugger"** button to debug the program on the Galileo:
 
