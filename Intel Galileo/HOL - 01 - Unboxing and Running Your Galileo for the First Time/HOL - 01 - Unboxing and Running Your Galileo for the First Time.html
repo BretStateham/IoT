@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Markdown Preview</title>
+<style>
+body{font-family:helvetica, arial, freesans, clean, sans-serif;color:#333;line-height:1.6;font-size:14px}.markdown-body{line-height:1.6;font-size:14px}.markdown-body > *:first-child{margin-top:0 !important}.markdown-body > *:last-child{margin-bottom:0 !important}.markdown-body a.absent{color:#c00}.markdown-body h1{font-weight:700;-webkit-font-smoothing:antialiased;color:#000;font-size:28px;margin:20px 0 10px;padding:0}.markdown-body h2{font-weight:700;-webkit-font-smoothing:antialiased;color:#000;font-size:24px;border-bottom-color:#ccc;border-bottom-width:1px;border-bottom-style:solid;margin:20px 0 10px;padding:0}.markdown-body h3{font-weight:700;-webkit-font-smoothing:antialiased;font-size:18px;margin:20px 0 10px;padding:0}.markdown-body h4{font-weight:700;-webkit-font-smoothing:antialiased;font-size:16px;margin:20px 0 10px;padding:0}.markdown-body h5{font-weight:700;-webkit-font-smoothing:antialiased;font-size:14px;margin:20px 0 10px;padding:0}.markdown-body h6{font-weight:700;-webkit-font-smoothing:antialiased;color:#777;font-size:14px;margin:20px 0 10px;padding:0}.markdown-body blockquote{color:#777;border-left-color:#ddd;border-left-width:4px;border-left-style:solid;margin:15px 0;padding:0 15px}.markdown-body dl{margin:15px 0;padding:0}.markdown-body table{border-collapse:collapse;margin:15px 0;padding:0}.markdown-body pre{border-radius:3px;border:1px solid #ccc;line-height:19px;overflow:auto;font-size:13px;background-color:#f8f8f8;margin:15px 0;padding:6px 10px}.markdown-body li p.first{display:inline-block}.markdown-body dl dt{font-size:14px;font-style:italic;font-weight:700;margin:15px 0 5px;padding:0}.markdown-body dl dt:first-child{padding:0}.markdown-body dl dd{margin:0 0 15px;padding:0 15px}.markdown-body table tr{border-top-color:#ccc;border-top-width:1px;border-top-style:solid;background-color:#fff;margin:0;padding:0}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.markdown-body img{max-width:100%}.markdown-body span.frame{overflow:hidden;display:block}.markdown-body span.frame > span{border:1px solid #ddd;width:auto;overflow:hidden;float:left;display:block;margin:13px 0 0;padding:7px}.markdown-body span.frame span img{float:left;display:block}.markdown-body span.frame span span{color:#333;clear:both;display:block;padding:5px 0 0}.markdown-body span.align-center > span{text-align:center;overflow:hidden;display:block;margin:13px auto 0}.markdown-body span.align-center span img{text-align:center;margin:0 auto}.markdown-body span.align-right > span{text-align:right;overflow:hidden;display:block;margin:13px 0 0}.markdown-body span.align-right span img{text-align:right;margin:0}.markdown-body span.float-left{overflow:hidden;margin-right:13px;float:left;display:block}.markdown-body span.float-left span{margin:13px 0 0}.markdown-body span.float-right{overflow:hidden;margin-left:13px;float:right;display:block}.markdown-body span.float-right > span{text-align:right;overflow:hidden;display:block;margin:13px auto 0}.markdown-body pre > code{border:currentColor;white-space:pre;margin:0;padding:0}.markdown-body .highlight pre{border-radius:3px;border:1px solid #ccc;line-height:19px;overflow:auto;font-size:13px;background-color:#f8f8f8;padding:6px 10px}.markdown-body p,.markdown-body li{margin:15px 0}.markdown-body ul,.markdown-body ol{padding-left:30px;margin:15px 0}.markdown-body > h2:first-child,.markdown-body > h1:first-child,.markdown-body > h1:first-child + h2{border:0 currentColor;padding-top:0;margin-top:0}.markdown-body > h3:first-child,.markdown-body > h4:first-child,.markdown-body > h5:first-child,.markdown-body > h6:first-child{padding-top:0;margin-top:0}.markdown-body h1 + p,.markdown-body h2 + p,.markdown-body h3 + p,.markdown-body h4 + p,.markdown-body h5 + p,.markdown-body h6 + p,.markdown-body ul li > :first-child,.markdown-body ol li > :first-child,.markdown-body dl dt > :first-child,.markdown-body dl dd > :first-child,.markdown-body blockquote > :first-child,.markdown-body table tr th > :first-child,.markdown-body table tr td > :first-child{margin-top:0}.markdown-body ul li > :last-child,.markdown-body ol li > :last-child,.markdown-body dl dt > :last-child,.markdown-body dl dd > :last-child,.markdown-body blockquote > :last-child,.markdown-body table tr th > :last-child,.markdown-body table tr td > :last-child{margin-bottom:0}.markdown-body table tr th,.markdown-body table tr td{border:1px solid #ccc;text-align:left;margin:0;padding:6px 13px}.markdown-body span.align-center,.markdown-body span.align-right{overflow:hidden;clear:both;display:block}.markdown-body code,.markdown-body tt{border-radius:3px;border:1px solid #eaeaea;white-space:nowrap;background-color:#f8f8f8;margin:0 2px;padding:0 5px}.markdown-body pre code,.markdown-body pre tt{border:currentColor;background-color:transparent}span.codelanguage{display:none}
+</style>
+</head>
+<body>
+<div class="markdown-body">
+<p><a name="Title"></a></p>
+
+<h1 id="HOL_-_01_-_Unboxing_and_Running_Your_Galileo_for_the_First_Time">HOL - 01 - Unboxing and Running Your Galileo for the First Time</h1>
+
+<p>Welcome to the Intel Galileo!  In this HOL, we'll walkthrough the steps for taking your Intel Galileo out of the box, installing the necessary tools on your computer, and running your first Sketch.</p>
+<blockquote>
+<p><strong>Note:</strong> <strong><em>Currently, this document refers to the Galileo Gen 1 Boards.  The steps documented here may well work identically with a Gen 2 board, but they have not yet been tested with a Gen 2 board.</em></strong></p>
+
+<p><strong>Note:</strong> There is a video that walks you through these same steps here: <a href="https://www.youtube.com/watch?v=zUZmWe8nrc4">https://www.youtube.com/watch?v=zUZmWe8nrc4</a></p>
+</blockquote>
+<h2 id="Tasks">Tasks:</h2>
+
+<ol>
+<li><a href="#Task1">Unboxing your Intel Galileo</a></li>
+<li><a href="#Task2">Downloading and Extracting the Arduino IDE for Galileo</a></li>
+<li><a href="#Task3">Connecting your Galileo and Installing the Driver</a></li>
+<li><a href="#Task4">Updating the Galileo's Firmware</a></li>
+<li><a href="#Task5">Running the &quot;Blink&quot; sketch on your Galileo</a></li>
+<li><a href="#Task6">Extra Credit - Using an External LED with Blink</a></li>
+</ol>
+
+<hr>
+
+<p><a name="Task1"></a></p>
+
+<h2 id="Task_1_Unboxing_your_Intel_Galileo">Task 1 Unboxing your Intel Galileo</h2>
+
+<p>Unboxing your Galileo should be pretty straight forward.  About the only gotcha is that there is <strong>NO USB CABLE</strong> supplied with your Galileo.  You will need to locate your own USB-A Male to USB Micro Male cable to connect your Galileo with your host pc.  </p>
+
+<ol>
+<li>Open up your box!<br></li>
+<li>Pull the Galileo out of it's Static Sheild Bag</li>
+<li>Remove the top/bottom divider from the box, and pull out the power adapter, power cable, and the appropriate electrical outlet connector for your electrical service. </li>
+<li><p>Connect the pieces of the power supply (Outlet connector, power supply, cable) together. </p>
+
+<p><img src="images/01010-unboxedgalileo.png?raw=true" alt="01010-UnboxedGalileo" title="Unboxed Galileo">
+</p></li>
+<li><p>As mentioned above, you will need to locate a &quot;USB-A Male to USB Micro Male&quot; cable that you will use to connect the Galileo to your PC. If your phone has a micro usb connection, you can use the same cable you use to connect your phone to your pc.   </p>
+
+<p><img src="images/01020-usbcable.png?raw=true" alt="01020-USBCable" title="USB A Male to USB Micro Male Cable">
+</p></li>
+<li><p>Ok, before you plug it all together, let's download the software you'll need. </p></li>
+</ol>
+
+<p><a name="Task2"></a></p>
+
+<h2 id="Downloading_and_Extracting_the_Arduino_IDE_for_Galileo">Downloading and Extracting the Arduino IDE for Galileo</h2>
+
+<p>Initially, when you write code for your Galileo, you will use a customized version of the Arduino IDE from intel.  You can right regular arduino &quot;Sketches&quot; and run them on your Galileo.  This is because the Galileo is an &quot;<a href="http://arduino.cc/en/ArduinoCertified/Products" title="Arduino Certified Product Page">Arduino Certified</a>&quot; board.  </p>
+
+<ol>
+<li><p>Intel has a customized version of the Arduino IDE as part of their &quot;<a href="https://communities.intel.com/docs/DOC-22226" title="Software package release version 1.0.3 Downloads">Software package release version 1.0.3</a>&quot;.  There are versions for multiple operating systems.  Here, we'll assume the &quot;<a href="http://downloadmirror.intel.com/24272/eng/arduino-windows-1.0.3.7z" title="Arduino Software 1.5.3 for Windows Download">Arduino Software 1.5.3 for Windows</a>&quot;. This is a 159MB File. </p>
+<blockquote>
+<p><strong>Note:</strong> It's ok if you already have another version of the Arduino IDE installed or extracted to your machine.  We will extract this to it's own folder, and it won't overwrite or impact existing installs.  Just make sure that when you are working with Sketches that you want to run on the Galileo, that you run the version of the Arduino IDE from this download.  </p>
+</blockquote>
+<p><a href="http://downloadmirror.intel.com/24272/eng/arduino-windows-1.0.3.7z"><img src="images/02010-arduinoidedownload.png?raw=true" alt="02010-ArduinoIDEDownload" title="Aruduino 1.5.3 IDE Download for Galileo and Windows">
+</a></p></li>
+<li><p>Once you have download the .zip file, make sure to &quot;Unblock&quot; it before you extract it.  Right click on the file, then select <strong>&quot;Properties&quot;</strong> from the pop-up menu.  Then int the <strong>&quot;arduino-windows-1.0.3.zip Properties&quot; window, click the **&quot;Unblock&quot;</strong> button, then &amp;&amp;&quot;OK&quot;&amp;&amp;. </p>
+
+<p><img src="images/02020-unblocckzip.png?raw=true" alt="02020-UnblocckZip" title="Unblock Zip">
+</p></li>
+<li><p>Next, extract the downloaded .zip file to a folder off the root of your C:\ (or the drive of your choice).  Make sure to extract to a folder as close to the root as possible:</p>
+
+<p><img src="images/02030-extractzip.png?raw=true" alt="02030-ExtractZip" title="Extract Zip File To Root">
+</p>
+<blockquote>
+<p><strong>Note:</strong> If you don't extract to a folder close to the root you run the risk of encountering &quot;Path too long&quot; errors like the following.  If this happens, cancel the extraction, delete the extracted folder, and repeat the extraction, this time choosing a folder closer to the root of the drive.  </p>
+</blockquote>
+<p><img src="images/02040-pathtoolong.png?raw=true" alt="02040-PathTooLong" title="Path Too Long Error">
+</p></li>
+<li><p>Rename the extracted folder <strong>&quot;Arduino 1.5.3&quot;</strong>.  </p>
+<blockquote>
+<p><strong>Note:</strong> This isn't required, but the subsequent steps will assume this folder name.  If you extracted your .zip file to a different path, or named it something different, keep that path in mind during subsequent steps.  </p>
+</blockquote>
+<p><img src="images/02050-renamefolder.png?raw=true" alt="02050-RenameFolder" title="Rename Folder">
+</p></li>
+<li><p>Great, we are getting closer, but first, we need to install the USB driver for the Galileo on our machine and make sure that our Galileo's firmware is up to date.  </p></li>
+</ol>
+
+<p><a name="Task3"></a></p>
+
+<h2 id="Connecting_your_Galileo_and_Installing_the_Driver">Connecting your Galileo and Installing the Driver</h2>
+
+<ol>
+<li><p>You are ready to connect your Galileo to power, and then to your PC.  FIRST connect to the power supply to the Galielo:</p>
+
+<p><img src="images/03010-connectpower.png?raw=true" alt="03010-ConnectPower" title="Connect Power">
+</p></li>
+<li><p>Wait until the <strong>&quot;USB&quot;</strong> LED on the Galileo board lights up, then connect the Micro USB cable you located previously to the Galileo's <strong>&quot;USB Client&quot;</strong> port, and then connect the other end of the cable to your PC. </p>
+
+<p><img src="images/03020-connectusbcable.png?raw=true" alt="03020-ConnectUSBCable" title="Connect USB Cable">
+</p></li>
+<li><p>When you connect the USB cable to your PC, you are likely to see the standard attempt to load the device driver, however, it likely won't find the driver:</p>
+
+<p><img src="images/03030-driverinstallationattempt.png?raw=true" alt="03030-DriverInstallationAttempt" title="Driver Installation Attempt">
+</p></li>
+<li><p>To load the driver, open your computers &quot;Device Manager&quot;</p>
+
+<p><img src="images/03040-devicemanager.png?raw=true" alt="03040-DeviceManager" title="Open Device Manager">
+</p></li>
+<li><p>Then, under the <strong>&quot;Other Devices&quot;</strong> category, you should see a <strong>&quot;Gadget Serial v2.4&quot;</strong> device.  Right click on that device and select <strong>&quot;Update Driver Software...&quot;</strong> from the pop-up menu:</p>
+
+<p><img src="images/03050-updatedriver.png?raw=true" alt="03050-UpdateDriver" title="Update Driver">
+</p></li>
+<li><p>In the <strong>&quot;Update Driver Software - Gadget Serial v2.4&quot; window, select **&quot;Browse my computer for driver software&quot;</strong> </p>
+
+<p><img src="images/03060-browse.png?raw=true" alt="03060-Browse" title="Browser for Driver">
+</p></li>
+<li><p>On the <strong>&quot;Browser for driver software on your compter&quot; page, browse the the **&quot;C:\arduino-1.5.3\hardware\arduino\x86\tools&quot;</strong> folder and click <strong>&quot;Next&quot;</strong> </p>
+<blockquote>
+<p><strong>Note:</strong> Remember to modify the path if you extracted the Intel Galileo Ardunio software to a different path</p>
+</blockquote>
+<p><img src="images/03070-browsertofolder.png?raw=true" alt="03070-BrowserToFolder" title="Browse to the Tools Folder">
+</p></li>
+<li><p>If all went well, the Galileo driver should have been installed. Click <strong>&quot;Close&quot;</strong>. </p>
+
+<p><img src="images/03080-driverinstalled.png?raw=true" alt="03080-DriverInstalled" title="Driver Successfully Installed">
+</p></li>
+<li><p>Back in the <strong>&quot;Device Manager&quot;</strong>, you should now see your Galileo under the <strong>&quot;Ports (COM &amp; LPT)&quot;</strong> category, you should now see your Galileo listening on a specific COM port.  The USB connection creates a virtual COM port that you can use to communicate with your Galileo. </p>
+<blockquote>
+<p><strong>Note:</strong> The screenshot below shows the Galileo listening on COM4. <strong><em>Your Galileo may well be on a different port</em></strong>.  Remember the COM port your Galileo is listening on.  You will want to make sure to use that same COM port in the Arduino IDE.</p>
+</blockquote>
+<p><img src="images/03090-galileocomport.png?raw=true" alt="03090-GalileoCOMPort" title="Galileo on COM Port">
+</p></li>
+</ol>
+
+<p><a name="Task4"></a></p>
+
+<h2 id="Updating_the_Galileos_Firmware">Updating the Galileo's Firmware</h2>
+
+<p>The team at Intel is constantly working to improve the Galileo.  As such, you should make sure to update your Galileo to the latest firmware version.  </p>
+
+<ol>
+<li><p>Ensure that your Galileo is connected and listening on a COM port as described in the previous step. </p></li>
+<li><p>Open the &quot;C:\aruduino-1.5.3&quot; folder that you extracted the Arduino Software for the Intel Galileo to earlier (use the appropriate path if you extracted to a different directory), and run <strong>&quot;arduino.exe&quot;</strong> to launch the Arduino IDE:</p>
+
+<p><img src="images/04010-runarduinoide.png?raw=true" alt="04010-RunArduinoIDE" title="Run Arduino IDE">
+</p></li>
+<li><p>First, we need to let the Arduino IDE know what kind of board we are using.  In the Arduino IDE, from the menu bar select <strong>&quot;Tools&quot;</strong> | <strong>&quot;Board&quot;</strong> | <strong>&quot;Intel Galileo&quot;</strong> (this is for a Intel Galileo Gen 1 board).</p>
+
+<p><img src="images/04020-setboard.png?raw=true" alt="04020-SetBoard" title="Set Board">
+</p></li>
+<li><p>Next, we need to tell the Arduino IDE what COM port the board is listening on.  From the menu bar select <strong>&quot;Tools&quot;</strong> | <strong>&quot;Serial Port&quot;</strong> | <strong>&quot;&lt;The COM Port Your Galileo Is Listening On&gt;&quot;</strong> (from the previous task, COM4 in this case).</p>
+
+<p><img src="images/04030-selectport.png?raw=true" alt="04030-SelectPort" title="Select Port">
+</p></li>
+<li><p>Next, start the firmware update by selecting <strong>&quot;Help&quot;</strong> | <strong>&quot;Galileo Firmware Update&quot;</strong> from the menu bar:</p>
+
+<p><img src="images/04040-galileofirmwareupdate.png?raw=true" alt="04040-GalileoFirmwareUpdate" title="Galileo Firmware Update">
+</p></li>
+<li><p>Click <strong>&quot;OK&quot;</strong> to confirm the warning about external power:</p>
+
+<p><img src="images/04050-extnernalpowerwarning.png?raw=true" alt="04050-ExtnernalPowerWarning" title="External Power Warning">
+</p></li>
+<li><p>If your Galileo's firmware needs updating you will be shown the current version and the target version.  Click <strong>&quot;Yes&quot;</strong> to confirm the firmware update:</p>
+
+<p><img src="images/04050-confirmupdate.png?raw=true" alt="04050-ConfirmUpdate" title="Confirm Firmware Update">
+</p>
+<blockquote>
+<p><strong>Note:</strong> If your firmware is already up to date, you will see a prompt similar to the following (although your version number may be different).  You don't need to update your firmware unless you feel there is a problem with it's current installation:</p>
+</blockquote>
+<p><img src="images/04055-firmwarealreadyuptodate.png?raw=true" alt="04055-FirmwareAlreadyUpToDate" title="Firmware Already Up To Date">
+</p></li>
+<li><p>You will see a number of status prompts, and eventually one letting you know that the update could take as long as five minutes.  You will also likely hear your system's USB &quot;Connect&quot; and &quot;Disconnect&quot; sounds as the update proceeds:</p>
+
+<p><img src="images/04060-updateprompt01.png?raw=true" alt="04060-UpdatePrompt01" title="Update Prompt">
+</p>
+
+<p><img src="images/04070-updateprompt02.png?raw=true" alt="04070-UpdatePrompt02" title="Update Prompt">
+</p>
+
+<p><img src="images/04080-updateprompt03.png?raw=true" alt="04080-UpdatePrompt03" title="Update Prompt">
+</p></li>
+<li><p>Eventually, the update should complete. Click <strong>&quot;OK&quot;</strong> to close the prompt:</p>
+
+<p><img src="images/04090-updatecomplete.png?raw=true" alt="04090-UpdateComplete" title="Firmware Update Complete">
+</p></li>
+</ol>
+
+<p><a name="Task5"></a></p>
+
+<h2 id="Running_the_Blink_sketch_on_your_Galileo">Running the &quot;Blink&quot; sketch on your Galileo</h2>
+
+<p>You are finally ready to create and run your first &quot;Sketch&quot; (Arduino programs are called &quot;Sketches&quot;).  The canonical &quot;Hello, World&quot; sample for the Arduino is to blink an LED.  The Galileo actually has an LED on board so you don't even need to go get an LED for this.  </p>
+
+<p>The Arduino (as well as the Galileo) has a number of &quot;pins&quot; that you can use to interact with other devices.  In this case we will use a &quot;<a href="http://arduino.cc/en/Tutorial/DigitalPins" title="Arduino Digital Pins Documentation">Digital Pin</a>&quot;. Digital Pins can be used for INPUT (reading signals from external devices IN to the Galileo) or OUTPUT (writing digital signals OUT to external devices).  Whether set to INPUT or OUTPUT, a digital pin can have two states, LOW (0v) or HIGH (5V).  </p>
+
+<p><img src="images/05010-digitalpinsongalileo.png?raw=true" alt="05010-DigitalPinsOnGalileo" title="Digital Pins on the Galileo">
+</p>
+
+<p>In the &quot;Blink Sketch&quot; we will use digital pin #13.  We will set it to OUTPUT so that we can send digital signals OUT to an LED.  As it turns out, the Galileo's on board LED maps to the Galileo's digital pin 13 so we don't even really need a physical LED for this. </p>
+
+<ol>
+<li><p>If not already open, open the Arduino IDE you downloaded and extracted previously</p>
+
+<p><img src="images/04010-runarduinoide.png?raw=true" alt="04010-RunArduinoIDE" title="Run Arduino IDE">
+</p></li>
+<li><p>From the menu bar select <strong>&quot;File&quot;</strong> | <strong>&quot;Examples&quot;</strong> | <strong>&quot;01.Basics&quot;</strong> | <strong>&quot;Blink&quot;</strong></p>
+
+<p><img src="images/05020-openblinksketch.png?raw=true" alt="05020-OpenBlinkSketch" title="Open Example Blink Sketch">
+</p></li>
+<li><p>A new instance of the Arduino IDE will open with the &quot;Blink&quot; sketch loaded. </p>
+
+<p><img src="images/05030-blinksketchloaded.png?raw=true" alt="05030-BlinkSketchLoaded" title="Blink Sketch Loaded">
+</p></li>
+<li><p>The code for the blink sketch should be similar to this: </p>
+
+<span class="codelanguage">C++</span><pre><code class="C++"><span style="color:#008000">/*
+  Blink
+  Turns on an LED on for one second, then off for one second, repeatedly.
+
+  This example code is in the public domain.
+ */</span>
+
+<span style="color:#008000">// Pin 13 has an LED connected on most Arduino boards.</span>
+<span style="color:#008000">// give it a name:</span>
+<span style="color:#0000FF">int</span> led = 13;
+
+<span style="color:#008000">// the setup routine runs once when you press reset:</span>
+<span style="color:#0000FF">void</span> setup() {                
+  <span style="color:#008000">// initialize the digital pin as an output.</span>
+  pinMode(led, OUTPUT);     
+}
+
+<span style="color:#008000">// the loop routine runs over and over again forever:</span>
+<span style="color:#0000FF">void</span> loop() {
+  digitalWrite(led, HIGH);   <span style="color:#008000">// turn the LED on (HIGH is the voltage level)</span>
+  delay(1000);               <span style="color:#008000">// wait for a second</span>
+  digitalWrite(led, LOW);    <span style="color:#008000">// turn the LED off by making the voltage LOW</span>
+  delay(1000);               <span style="color:#008000">// wait for a second</span>
+}
+</code></pre></li>
+<li><p>Let's take a closer look at the code.  First, it defines an integer variable that represents the digital pin we want to work with (13 in this case).  As the comments suggest, the Galileo has an on board LED that is mapped to digital pin 13:</p>
+
+<span class="codelanguage">C++</span><pre><code class="C++"><span style="color:#008000">// Pin 13 has an LED connected on most Arduino boards.</span>
+<span style="color:#008000">// give it a name:</span>
+<span style="color:#0000FF">int</span> led = 13;
+</code></pre></li>
+<li><p>An Arduino Sketch has to required methods, <em><strong>setup()</strong> and *<strong>loop()</strong></em>.  The <strong><em>setup()</em></strong> method is called once at at the beginning of the sketch's execution.  In this case, we simply set the led pin up for OUTPUT.  </p>
+
+<span class="codelanguage">C++</span><pre><code class="C++"><span style="color:#008000">// the setup routine runs once when you press reset:</span>
+<span style="color:#0000FF">void</span> setup() {                
+  <span style="color:#008000">// initialize the digital pin as an output.</span>
+  pinMode(led, OUTPUT);     
+}
+</code></pre></li>
+<li><p>finally the <strong>loop()</strong> method is called repeatedly while the sketch executes. In this sketch, we use the <strong>digitalWrite()</strong> method to set the led pin HIGH (to 5V) which turns ON the on board led connected to pin 13.  Then we wait for 1 second (1000 milliseconds), then turn the led LOW (0v), and wait for 1 second.  This occurrs each time the <strong>loop()</strong> method is called.  The end result is an LED that blinks ON and OFF repeatedly:</p>
+
+<span class="codelanguage">C++</span><pre><code class="C++"><span style="color:#008000">// the loop routine runs over and over again forever:</span>
+<span style="color:#0000FF">void</span> loop() {
+  digitalWrite(led, HIGH);   <span style="color:#008000">// turn the LED on (HIGH is the voltage level)</span>
+  delay(1000);               <span style="color:#008000">// wait for a second</span>
+  digitalWrite(led, LOW);    <span style="color:#008000">// turn the LED off by making the voltage LOW</span>
+  delay(1000);               <span style="color:#008000">// wait for a second</span>
+}
+</code></pre></li>
+<li><p>Ok, now that we know what the code does, let's upload it to the Galileo.  From the Arduino IDE's toolbar, click the &quot;Upload&quot; button:</p>
+<blockquote>
+<p><strong>Note:</strong> Make sure that you have selected the proper board type and serial port from the Arduino IDE's <strong>&quot;Tools&quot;</strong> menu as described previously</p>
+</blockquote>
+<p><img src="images/05040-uploadbutton.png?raw=true" alt="05040-UploadButton" title="Upload Button">
+</p></li>
+<li><p>Then at the bottom of the Arduino IDE, verify that the code was compiled and uploaded to the Galileo successfully:</p>
+
+<p><img src="images/05050-transfercomplete.png?raw=true" alt="05050-TransferComplete" title="Transfer Complete">
+</p></li>
+<li><p>And if you look at the Galileo, the on board LED should be blinking on and off at one second intervals (on for one second, off for one second, ...):</p>
+
+<p><img src="images/05060-ledon.png?raw=true" alt="05060-LEDOn" title="LED On">
+</p>
+
+<p><img src="images/05070-ledoff.png?raw=true" alt="05070-LEDOff" title="LED Off">
+</p></li>
+<li><p>Congratulations! </p></li>
+</ol>
+
+<p><a name="Task6"></a></p>
+
+<h2 id="Extra_Credit_-_Using_an_External_LED_with_Blink">Extra Credit - Using an External LED with Blink</h2>
+
+<p>Ok, this isn't really &quot;Extra Credit&quot;.  In fact, it's really not a big deal, but if you haven't played with electronics before, this extra step might give you a little more sense of accomplishment.  </p>
+
+<p>In the last task, we toggled digital pin 13 on and off, and we could see the on board LED blinking on and off when we did so.  That worked because Intel &quot;piggy backed&quot; an onboard LED on digital pin 13.  This is a common technique used on most Arduino compatible boards.  It just make it easy to run the &quot;Blink&quot; demo without having to have any extra parts.  </p>
+
+<p>If you have access to an external LED though, you can blink it as well.  Since we already have a sketch that toggles digital pin 13, we'll go ahead and use that same pin, but first, let's talk about LEDs.</p>
+
+<p>LED's are <strong>&quot;<a href="http://en.wikipedia.org/wiki/Light-emitting_diode">Light-emitting Diodes</a>&quot;</strong>.  Diodes are semiconductors that only allow current to flow in one direction.  LEDs are a special type of diode that emit light when current is passed through them.  </p>
+
+<p>Because LED's only allow current to flow in a single direction, you have to make sure that you hook them up correctly.  The part of the LED that is connected closer to the voltage source (positive) is called the &quot;Anode&quot;. The part of the LED that is connected closer to ground (negative) is the &quot;Cathode&quot;.  You can tell the which &quot;leg&quot; of an LED is the Anode or the Cathode using a number of methods. The following diagram outlines those methods for you:</p>
+
+<p><img src="images/06010-ledpolarity.png?raw=true" alt="06010-LEDPolarity" title="LED Polarity">
+</p>
+
+<p>If you have a brand new LED, the &quot;long leg&quot; is the &quot;anode&quot; and the &quot;short leg&quot; is the cathode.  If your LED isn't new, or if the legs have been cut short, you can use some of the other indicators from the diagram above to determine it's polarity. </p>
+
+<p>Technically, you should use a <strong>&quot;<a href="https://www.sparkfun.com/tutorials/219">Current Limiting Resistor</a>&quot;</strong> when using an LED, but we are going to skip that in this quick demo.  The current we put through the LED shouldn't harm most LEDs for short term use, and if it does blow our LED, well, LEDs are cheap.  Super cheap. </p>
+
+<p>So, with that said, here's how we are going to hook up our LED:</p>
+
+<p><img src="images/06020-fritzingblinkdiagram.png?raw=true" alt="06020-FritzingBlinkDiagram" title="Fritzing Blink Diagram">
+</p>
+<blockquote>
+<p><strong>Note:</strong> That awesome diagram was created using a free tool called Fritzing.  Get it, and learn more about it at fritzing.org</p>
+</blockquote>
+<ol>
+<li><p>Based on the information above, connect your LED to the Galileo by placing the &quot;anode&quot; (long leg) of the LED into Digital Pin 13 on the Galileo, and the &quot;cathode&quot; (short leg) into the GND (ground) pin that is immediately adjacent to digital pin 13 (isn't that convenient). </p></li>
+<li><p>If you still have your sketch running from before, your LED should start blinking immediately.  If not, use the steps described in the previous task to deploy the &quot;Blink&quot; sketch to your Galileo.  Once done, you should see the external LED blinking.</p>
+
+<p><img src="images/06030-ledon.png?raw=true" alt="06030-LEDOn" title="LED On">
+</p>
+
+<p><img src="images/06040-ledoff.png?raw=true" alt="06040-LEDOff" title="LED Off">
+</p></li>
+</ol>
+
+</div>
+</body>
+</html>
