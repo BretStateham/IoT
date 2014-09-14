@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Markdown Preview</title>
+<style>
+body{font-family:helvetica, arial, freesans, clean, sans-serif;color:#333;line-height:1.6;font-size:14px}.markdown-body{line-height:1.6;font-size:14px}.markdown-body > *:first-child{margin-top:0 !important}.markdown-body > *:last-child{margin-bottom:0 !important}.markdown-body a.absent{color:#c00}.markdown-body h1{font-weight:700;-webkit-font-smoothing:antialiased;color:#000;font-size:28px;margin:20px 0 10px;padding:0}.markdown-body h2{font-weight:700;-webkit-font-smoothing:antialiased;color:#000;font-size:24px;border-bottom-color:#ccc;border-bottom-width:1px;border-bottom-style:solid;margin:20px 0 10px;padding:0}.markdown-body h3{font-weight:700;-webkit-font-smoothing:antialiased;font-size:18px;margin:20px 0 10px;padding:0}.markdown-body h4{font-weight:700;-webkit-font-smoothing:antialiased;font-size:16px;margin:20px 0 10px;padding:0}.markdown-body h5{font-weight:700;-webkit-font-smoothing:antialiased;font-size:14px;margin:20px 0 10px;padding:0}.markdown-body h6{font-weight:700;-webkit-font-smoothing:antialiased;color:#777;font-size:14px;margin:20px 0 10px;padding:0}.markdown-body blockquote{color:#777;border-left-color:#ddd;border-left-width:4px;border-left-style:solid;margin:15px 0;padding:0 15px}.markdown-body dl{margin:15px 0;padding:0}.markdown-body table{border-collapse:collapse;margin:15px 0;padding:0}.markdown-body pre{border-radius:3px;border:1px solid #ccc;line-height:19px;overflow:auto;font-size:13px;background-color:#f8f8f8;margin:15px 0;padding:6px 10px}.markdown-body li p.first{display:inline-block}.markdown-body dl dt{font-size:14px;font-style:italic;font-weight:700;margin:15px 0 5px;padding:0}.markdown-body dl dt:first-child{padding:0}.markdown-body dl dd{margin:0 0 15px;padding:0 15px}.markdown-body table tr{border-top-color:#ccc;border-top-width:1px;border-top-style:solid;background-color:#fff;margin:0;padding:0}.markdown-body table tr:nth-child(2n){background-color:#f8f8f8}.markdown-body img{max-width:100%}.markdown-body span.frame{overflow:hidden;display:block}.markdown-body span.frame > span{border:1px solid #ddd;width:auto;overflow:hidden;float:left;display:block;margin:13px 0 0;padding:7px}.markdown-body span.frame span img{float:left;display:block}.markdown-body span.frame span span{color:#333;clear:both;display:block;padding:5px 0 0}.markdown-body span.align-center > span{text-align:center;overflow:hidden;display:block;margin:13px auto 0}.markdown-body span.align-center span img{text-align:center;margin:0 auto}.markdown-body span.align-right > span{text-align:right;overflow:hidden;display:block;margin:13px 0 0}.markdown-body span.align-right span img{text-align:right;margin:0}.markdown-body span.float-left{overflow:hidden;margin-right:13px;float:left;display:block}.markdown-body span.float-left span{margin:13px 0 0}.markdown-body span.float-right{overflow:hidden;margin-left:13px;float:right;display:block}.markdown-body span.float-right > span{text-align:right;overflow:hidden;display:block;margin:13px auto 0}.markdown-body pre > code{border:currentColor;white-space:pre;margin:0;padding:0}.markdown-body .highlight pre{border-radius:3px;border:1px solid #ccc;line-height:19px;overflow:auto;font-size:13px;background-color:#f8f8f8;padding:6px 10px}.markdown-body p,.markdown-body li{margin:15px 0}.markdown-body ul,.markdown-body ol{padding-left:30px;margin:15px 0}.markdown-body > h2:first-child,.markdown-body > h1:first-child,.markdown-body > h1:first-child + h2{border:0 currentColor;padding-top:0;margin-top:0}.markdown-body > h3:first-child,.markdown-body > h4:first-child,.markdown-body > h5:first-child,.markdown-body > h6:first-child{padding-top:0;margin-top:0}.markdown-body h1 + p,.markdown-body h2 + p,.markdown-body h3 + p,.markdown-body h4 + p,.markdown-body h5 + p,.markdown-body h6 + p,.markdown-body ul li > :first-child,.markdown-body ol li > :first-child,.markdown-body dl dt > :first-child,.markdown-body dl dd > :first-child,.markdown-body blockquote > :first-child,.markdown-body table tr th > :first-child,.markdown-body table tr td > :first-child{margin-top:0}.markdown-body ul li > :last-child,.markdown-body ol li > :last-child,.markdown-body dl dt > :last-child,.markdown-body dl dd > :last-child,.markdown-body blockquote > :last-child,.markdown-body table tr th > :last-child,.markdown-body table tr td > :last-child{margin-bottom:0}.markdown-body table tr th,.markdown-body table tr td{border:1px solid #ccc;text-align:left;margin:0;padding:6px 13px}.markdown-body span.align-center,.markdown-body span.align-right{overflow:hidden;clear:both;display:block}.markdown-body code,.markdown-body tt{border-radius:3px;border:1px solid #eaeaea;white-space:nowrap;background-color:#f8f8f8;margin:0 2px;padding:0 5px}.markdown-body pre code,.markdown-body pre tt{border:currentColor;background-color:transparent}span.codelanguage{display:none}
+</style>
+</head>
+<body>
+<div class="markdown-body">
+<p><a name="Title"></a></p>
+
+<h2 id="HOL_-_02_-_Running_Windows_on_your_Intel_Galileo">HOL - 02 - Running Windows on your Intel Galileo</h2>
+
+<p>In the &quot;HOL - 01 - Unboxing and Running Your Galileo for the First Time&quot; lab we walked step-by-step through the process of unboxing, setting up, and using your Galileo the for the first time.  </p>
+
+<p>The Galileo board ships with a version of Linux flashed onto an onboard ROM. However, you can also boot the Galileo to different off the Micro SD card, including various linux distributions as well as a free version of Windows from the &quot;<a href="http://windowsondevices.com">Windows Developer Program for IoT</a>&quot;. </p>
+
+<p>There is a video online that walks through the steps (albeit slightly differently) here: <a href="http://youtu.be/yrRMomesBKM">http://youtu.be/yrRMomesBKM</a> </p>
+
+<p><a name="why"></a></p>
+
+<h2 id="Why_run_Windows_on_your_Galileo">Why run Windows on your Galileo?</h2>
+
+<p>If you went through the first lab, &quot;HOL - 01 - Unboxing and Running Your Galileo for the First Time&quot;, you have seen that the Galileo is fully functional out of the box with the Linux image that is flashed on it. So Why would you install Windows on it? Here are some answers to that question: </p>
+
+<ol>
+<li><p>The &quot;Windows on Devices&quot; program is in its early stages, yet already it is supported on multiple boards including the <strong><a href="http://www.intel.com/content/www/us/en/do-it-yourself/galileo-maker-quark-board.html">Galileo</a>, <a href="http://www.minnowboard.org/">Minnowboard Max</a>, and <a href="http://www.sharkscove.org/">Sharks Cove</a></strong>.  Microsoft is committed to supporting Windows across a variety of embedded devices now. So its not just about the Galileo, but installing Windows on the Galileo now helps you to &quot;get in on the ground floor&quot; so to speak with the &quot;Windows on Devices&quot; program. </p></li>
+<li><p>Microsoft announced at build, that the version of windows that runs on embedded devices will be FREE.  As well as a free version of Windows for devices with screens less than 9&quot;</p></li>
+<li><p>By putting Windows on the Galileo, existing Windows developer can use familiar development tools and APIs to develop embedded applications.  We'll see later in the HOL that you can use Visual Studio 2013, Visual C++, and Win32 APIs to create apps that run on the Galileo.</p></li>
+<li><p>Visual Studio Express 2013 for Windows Desktop can be used to develop Win32 apps for Windows running on Devices. Microsoft is also making it possible to install the &quot;Windows Driver Kit (WDK)&quot; for use in Visual Studio Express. </p></li>
+<li><p>Microsoft has announced a renewed focus and effort on the <a href="http://www.netmf.com/">.NET Micro Framework</a></p></li>
+<li><p>At //BUILD/ in April 2014, it was announced that the team is working to extend the Universal App model to &quot;Windows on Devices&quot;.  There were some other sessions at BUILD that talked about  </p>
+
+<ul>
+<li><a href="http://channel9.msdn.com/Events/Build/2014/KEY01">Day 1 Keynote</a> at about <a href="http://channel9.msdn.com/Events/Build/2014/KEY01#time=2h03m16s">02:03:16</a> - Terry Myerson talks about IoT, the Galileo, and <a href="http://channel9.msdn.com/Events/Build/2014/KEY01#time=2h04m26s">the Piano demo</a>.  Then at about <a href="http://channel9.msdn.com/Events/Build/2014/KEY01#time=2h10m35s">02:10:35</a>, Terry talks about &quot;Windows for the Internet of Things&quot; being free, as well as free on phones and tablets with screen sizes less than 9 inches. </li>
+<li><a href="http://channel9.msdn.com/Events/Build/2014/KEY02">Day 2 Keynote</a> at about <a href="http://channel9.msdn.com/Events/Build/2014/KEY02#time=2h02m18s">02:02:18</a> - Steve Guggenhiemer talks about .NET MicroFramework and Embedded Devices</li>
+<li><a href="http://channel9.msdn.com/Events/Build/2014/2-511">Windows and the Internet of Things</a></li>
+<li><a href="http://channel9.msdn.com/Events/Build/2014/2-536">Simplifying Hardware Development for Windows Platforms</a></li>
+<li><a href="http://channel9.msdn.com/Events/Build/2014/3-635">http://channel9.msdn.com/Events/Build/2014/3-635</a></li>
+</ul></li>
+</ol>
+
+<p><a name="Prerequisites"></a></p>
+
+<h2 id="Prerequisites">Prerequisites</h2>
+
+<p>This lab assumes you have completed the &quot;HOL - 01 - Unboxing and Running Your Galileo for the First Time&quot; lab.  If you haven't completed that lab, do so before continuing with this one. </p>
+
+<p>At a minimum you need to have previously: </p>
+
+<ul>
+<li>Downloaded the &quot;<a href="http://downloadmirror.intel.com/24272/eng/arduino-windows-1.0.3.7z" title="Arduino Software 1.5.3 for Windows Download">Arduino Software 1.5.3 for Windows</a>&quot; for Galileo from the &quot;<a href="https://communities.intel.com/docs/DOC-22226" title="Software package release version 1.0.3 Downloads">Software package release version 1.0.3</a>&quot; </li>
+<li>Installed the Driver for your Intel Galileo</li>
+<li>Updated the firmware on the Galileo to the latest version.<br></li>
+</ul>
+
+<p>In addition, you need to have completed the registration for the &quot;<a href="http://windowsondevices.com">Windows Developer Program for IoT</a>&quot;. </p>
+
+<p><a name="anchor-name-here"></a></p>
+
+<h2 id="Required_Hardware">Required Hardware</h2>
+
+<p>You will need a few things for this lab.  You should already have the Galileo and the Power Supply from the first lab.  But now you will need to add a Micro SD Card, Adapter and Reader/Writer, as well as an Ethernet Cable:</p>
+
+<p><img src="images/00010-hardware.png?raw=true" alt="00010-Hardware" title="Hardware">
+</p>
+
+<ol>
+<li>Galileo </li>
+<li>Power Supply</li>
+<li>Micro SD Card, Adapter and Reader/Writer</li>
+<li>An Ethernet Cable (regular patch cable)</li>
+</ol>
+<blockquote>
+<p><strong>Note:</strong> It is also assumed that you have an ethernet port on your computer that you can connect the Ethernet cable to.  </p>
+</blockquote>
+<p><a name="Tasks"></a></p>
+
+<h2 id="Tasks">Tasks</h2>
+
+<ol>
+<li><a href="#Task1">Registering for the &quot;Windows Developer Program for IoT&quot;</a></li>
+<li><a href="#Task2">Installing the Windows on your Micro SD Card</a></li>
+<li><a href="#Task3">Setting up your Windows PC</a></li>
+<li><a href="#Task4">Booting the Galileo to Windows</a></li>
+<li><a href="#Task5">Running your first &quot;Wiring App&quot; on the Galileo</a></li>
+<li><a href="#Task6">Shutting Down your Galileo</a></li>
+</ol>
+
+<p><a name="Task1"></a></p>
+
+<h2 id="Registering_for_the_Windows_Developer_Program_for_IoT">Registering for the &quot;Windows Developer Program for IoT&quot;</h2>
+
+<p>In order to get access to the free windows version for the Galileo, as well as for the other downlaods, you need to first complete the registration for the &quot;Windows Developer Program for IoT&quot;</p>
+
+<ol>
+<li><p>Open your web browser and navigate to <a href="http://windowsondevices.com">http://windowsondevices.com</a> . Then click the &quot;R<a href="https://www.windowsondevices.com/signup.aspx">egister to be a Windows IoT Developer today</a>&quot; link</p>
+
+<p><img src="images/01010-registrationlink.png?raw=true" alt="01010-RegistrationLink" title="Registration Link">
+</p></li>
+<li><p>Complete the registration form:</p>
+
+<p><img src="images/01020-registrationform.png?raw=true" alt="01020-RegistrationForm" title="Registration Form">
+</p></li>
+<li><p>You should eventually receive an email at the address you used during your registration that looks similar to the following:</p>
+
+<p><img src="images/01030-regisrationemail.png?raw=true" alt="01030-RegisrationEmail" title="Registration Email">
+</p></li>
+<li><p>When you follow the link in the email and complete the process, you will receive another email.</p>
+
+<p><img src="images/01040-thankyou.png?raw=true" alt="01040-ThankYou" title="ThankYou">
+</p></li>
+<li><p>Next, Sign up for the &quot;<a href="https://connect.microsoft.com/windowsembeddediot/SelfNomination.aspx?ProgramID=8558">Windows Embedded Pre-Release Program</a>&quot;(<a href="https://connect.microsoft.com/windowsembeddediot/SelfNomination.aspx?ProgramID=8558">https://connect.microsoft.com/windowsembeddediot/SelfNomination.aspx?ProgramID=8558</a>) . Then follow the <strong>&quot;MICROSOFT WINDOWS FOR WINDOWS DEVELOPER PROGRAM FOR IOT EULA&quot;</strong>: </p>
+
+<p><img src="images/01042-signuplink.png?raw=true" alt="01042-SignupLink" title="Sign Up Link">
+</p></li>
+<li><p>Read, and agree to the EULA:</p>
+
+<p><img src="images/01044-eula.png?raw=true" alt="01044-Eula" title="EULA">
+</p></li>
+<li><p>You should end up on the &quot;Thank You&quot; page: </p>
+
+<p><img src="images/01046-thankyou.png?raw=true" alt="01046-ThankYou" title="Thank You">
+</p></li>
+<li><p>Finally, you should be able to open the &quot;<a href="https://connect.microsoft.com/windowsembeddedIoT">Windows Embedded Pre-Release Programs Home</a>&quot; page on Microsoft Connect.  From there you can click the <strong>&quot;Downloads&quot;</strong> link:</p>
+<blockquote>
+<p><strong>Note:</strong> If this is your first time using Microsoft Connect, you may need to complete an initial Connect registration.  The steps to sign up for connect should be pretty straight forward, but if you need assistance check out the <a href="http://ms-iot.github.io/content/SigninMSConnect.htm">Signing into Microsoft Connect</a> page.</p>
+</blockquote>
+<p><img src="images/01050-wdpiotconnect.png?raw=true" alt="01050-WdpIotConnect" title="Windows Developer Program for IoT on Connect">
+</p></li>
+<li><p>And finally, you can get the <a href="https://connect.microsoft.com/windowsembeddedIoT/Downloads">downloads</a> needed to install the tools on your PC, and Windows on your Galileo:</p>
+
+<p><img src="images/01060-downloads.png?raw=true" alt="01060-Downloads" title="Downloads Page">
+</p></li>
+</ol>
+
+<p><a name="Task2"></a></p>
+
+<h2 id="Installing_the_Windows_on_your_Micro_SD_Card">Installing the Windows on your Micro SD Card</h2>
+
+<p>Next, we'll apply the Windows Image from the **&quot;Windows Developer Program for Iot&quot; downlaods to the Micro SD card.  </p>
+
+<ol>
+<li><p>First, let's prepare the Micro SD Card.  Put the Micro SD card into it's Adapter, then into your SD Card Reader/Writer, and connect the SD Card Reader/Writer to your PC.</p>
+
+<p><img src="images/03002-microsdcardparts.png?raw=true" alt="03002-MicroSDCardParts" title="Mico SD Card Hardware">
+</p></li>
+<li><p>Open your File Explorer, right-click on the newly inserted Micro SD Card, and select <strong>&quot;Format...&quot;</strong> from the pop-up menu:</p>
+
+<p><img src="images/03004-drivemenu.png?raw=true" alt="03004-DriveMenu" title="Drive Menu">
+</p></li>
+<li><p>Make sure to format it as <strong>FAT32</strong> and to choose <strong>&quot;Quick Format&quot;</strong> (otherwise it takes a while).  I also like to give it a <strong>&quot;Volume Name&quot;</strong> like <strong>&quot;GALILEO_WIN&quot;</strong> so I can identify the disk more easily in the future:</p>
+
+<p><img src="images/03006-formatsdcard.png?raw=true" alt="03006-FormatSDCard" title="Format Micro SD Card">
+</p></li>
+<li><p>Download the latest versions of both the <strong>&quot;Windows Developer Program for IoT - Windows Image (WIM)&quot;</strong> and <strong>&quot;Windows Developer Program for IoT - apply-bootmedia.cmd&quot;</strong> from the <a href="https://connect.microsoft.com/windowsembeddedIoT/Downloads">Windows Developer Program for Iot Downloads Page</a></p>
+<blockquote>
+<p><strong>Note:</strong> in just a bit, we'll need the <strong>&quot;Windows Developer Program for IoT - Microsoft Installer (MSI)&quot;</strong> files as well.  If you want to download the latest versions of that now as well go ahead.  We'll still document it's download later though. For all of these downloads <strong>MAKE SURE TO GET THE LATEST VERSION</strong>.</p>
+</blockquote>
+<p><a href="https://connect.microsoft.com/windowsembeddedIoT/Downloads"><img src="images/03010-downloads.png?raw=true" alt="03010-Downloads" title="Downloads">
+</a></p></li>
+<li><p>Copy the <strong>.wim</strong> and the <strong>.cmd</strong> files to same directory on your machine (I created a folder named <strong>&quot;C:\Galileo&quot;</strong> and copied them there):</p>
+
+<p><img src="images/03020-filesinfolder.png?raw=true" alt="03020-FilesInFolder" title="Copy Files to the Same Folder">
+</p></li>
+<li><p>Next, open a command prompt as administrator: </p>
+
+<p><img src="images/03030-openadminprompt.png?raw=true" alt="03030-OpenAdminPrompt" title="Open Command Prompt as Administrator">
+</p></li>
+<li><p>Change into the directory where you copied the files above</p>
+
+<p><img src="images/03040-changedirectory.png?raw=true" alt="03040-ChangeDirectory" title="Change into Galileo Directory">
+</p></li>
+<li><p>Now, run the <strong>apply-BootMedia.cmd</strong> batch file with the following options:</p>
+
+<ul>
+<li><strong>-destination</strong>  :  Specify the path to the root of the Micro SD card (<strong>d:&#x5C;</strong> in my case)</li>
+<li><strong>-image</strong> : Specify the full <strong>&lowast;.wim</strong> file name.  <strong>You can press the &quot;TAB&quot; key to complete the file name</strong>.  Much easier than typing it all. </li>
+<li><strong>-hostname</strong> : The hostname that will be used for the Windows image on the Galileo.  It is recommended that you use <strong>mygalileo</strong> because the Visual Studio project templates default to that.  You can use a different name, you will just need to update the name in the visual studio templates. </li>
+<li><strong>-password</strong> : The password for the built-in <strong>&quot;Administrator&quot;</strong> account.  You will use this to authenticate to the Galileo.  I used <strong>admin</strong>*</li>
+</ul>
+
+<p><img src="images/03050-applybootmedia.png?raw=true" alt="03050-ApplyBootMedia" title="Apply Boot Media">
+</p></li>
+<li><p>The process could take ten minutes or longer to complete.  While it runs, you can move on to the next task.  <strong>JUST MAKE SURE NOT TO REBOOT YOUR MACHINE IF PROMPTED UNTIL THE APPLY-BOOTMEDIA.CMD BATCH FILE COMPLETES!</strong>.  It would be unfortunate if you had to repeat these steps. </p></li>
+<li><p><strong>LEAVE THIS BATCH FILE WINDOW OPEN WHILE IT RUNS. WE'LL RETURN TO IT LATER.</strong></p></li>
+</ol>
+
+<p><a name="Task3"></a></p>
+
+<h2 id="Setting_Up_Your_PC">Setting Up Your PC</h2>
+
+<ol>
+<li><p>Ensure that you have a copy of Visual Studio 2013 installed.  If not, you can download a free copy of <strong>&quot;<a href="http://www.visualstudio.com/downloads/">Visual Studio Express 2013 for Windows Desktop</a>&quot;</strong></p>
+
+<p><a href="http://www.visualstudio.com/downloads/"><img src="images/02010-vsexpressdownload.png?raw=true" alt="02010-VSExpressDownload" title="VSExpressDownload">
+</a></p></li>
+</ol>
+
+<p><a name="InstallMSI"></a></p>
+
+<ol>
+<li><p>Download the <strong><em>latest version</em></strong> of the <strong>&quot;Windows Developer Program for IoT - Microsoft Installer (MSI)&quot;</strong> from the connect <a href="https://connect.microsoft.com/windowsembeddedIoT/Downloads">downloads page</a>.  </p>
+<blockquote>
+<p><strong>Note:</strong> If you downloaded this file previously while downloading the <strong>&lowast;.wim</strong> and <strong>apply-BootMedia.cmd</strong> files, you can obviously skip this step.</p>
+</blockquote>
+<p><a href="https://connect.microsoft.com/windowsembeddedIoT/Downloads"><img src="images/02020-downloadmsi.png?raw=true" alt="02020-DownloadMSI" title="Download MSI">
+</a></p></li>
+<li><p>Once downloaded, run the installer.  This adds the <strong>&quot;Galileo Wiring App&quot;</strong> project template to Visual Studio 2013, and install the <strong>&quot;&quot;Galileo Watcher&quot;</strong> utility to help you manage the Galileo's on your network. Accept the license agreement, and click <strong>&quot;Install&quot;</strong>, then Follow the prompts to complete the installation:</p>
+
+<p><img src="images/02030-runinstaller.png?raw=true" alt="02030-RunInstaller" title="Run Installer">
+</p></li>
+<li><p>When the installation is complete, <strong>CLEAR</strong> the <strong>&quot;Launch Galileo Watcher Application&quot;</strong>.  We'll run that later when we need it. Click <strong>&quot;Finish&quot;</strong> to complete the installation.</p>
+
+<p><img src="images/02035-finishinstall.png?raw=true" alt="02035-FinishInstall" title="Finish Install">
+</p></li>
+<li><p>Finally, you need to install the Windows Telnet Client.  This is included with Windows, but not installed by default.  To install it, open <strong>&quot;Programs and Features&quot;</strong> from the Windows <strong>&quot;Control Panel&quot;</strong>, and click the &quot;Turn Windows features on or off&quot; link along the left hand side:</p>
+
+<p><img src="images/02040-windowsfeatures.png?raw=true" alt="02040-WindowsFeatures" title="Turn Windows features on or off">
+</p></li>
+<li><p>Then, in the <strong>&quot;Windows Features&quot;</strong> window, scroll down and turn ON the checkbox next to the <strong>&quot;Telnet Client&quot;</strong>, then click <strong>&quot;OK&quot;</strong> to install it.  It should just take a minute or two to install.  </p>
+
+<p><img src="images/02050-installtelnetclient.png?raw=true" alt="02050-InstallTelnetClient" title="Install Telnet Client">
+</p></li>
+</ol>
+
+<p><a name="Task4"></a></p>
+
+<h2 id="Booting_the_Galileo_to_Windows">Booting the Galileo to Windows</h2>
+
+<p>We are ready to boot the Galileo up to windows.  You'll your Galileo, Power Supply, Micro SD Card, and Ethernet Cable.  We'll start with a direct connection betwen your galileo and PC using the Ethernet Cable.  Later, you can connect them more in-directly using a network.  We won't cover those steps in the lab though:</p>
+
+<p><img src="images/04002-hardware.png?raw=true" alt="04002-Hardware" title="Hardware">
+</p>
+
+<ol>
+<li><p>Ensure that the <strong>apply-BootMedia.cmd</strong> batch file completed successfully.  If not, repeat the steps in <strong><a href="#Task2">Task 2</a></strong> .  Otherwise, make sure to note the details shown at the end of the <strong>apply-BootMedia.cmd</strong>'s output.  You'll need these details to connect to your Galileo.  You can close the command prompt when you are sure you have the values noted:</p>
+
+<p><img src="images/04010-applybootmediaoutput.png?raw=true" alt="04010-ApplyBootMediaOutput" title="Apply Boot Media Output">
+</p></li>
+<li><p>Next, extect the Micro SD card from your computer:</p>
+
+<p><img src="images/04020-ejectmicrosd.png?raw=true" alt="04020-EjectMicroSD" title="Eject Micro SD Card">
+</p></li>
+<li><p>Finally, let's connect it all up, and boot the Galileo:</p>
+
+<ol>
+<li>Insert the Micro SD Card into the Micro SD Card slot on the Galileo</li>
+<li>Plug the Ethernet cable into the Galileo, as well as into your PC (a direct connection).  Yes, this works with a regular patch cable.  It doesn't need to be a cross-over cable. </li>
+<li>Connect the power to the Galileo</li>
+</ol>
+<blockquote>
+<p><strong>Note:</strong> The boot process will take a couple of minutes.  As suggested in the diagram above, you should see the SD light on the Galileo (right next to the Micro SD Card slot) will flicker.  Once it settles down after a couple of minutes, the Galileo should be booted.</p>
+</blockquote>
+<p><img src="images/04030-connections.png?raw=true" alt="04030-Connections" title="04030-Connections">
+</p></li>
+<li><p>Once the Galileo has booted, run the <strong>&quot;GalieoWatcher.exe&quot;</strong> that was installed on your PC previously when we <a href="#InstallMSI">installed the <strong>&quot;Windows Developer Program for IoT - Microsoft Installer (MSI)&quot;</strong> in Task 3</a>:</p></li>
+<li><p><strong>AFTER THE GALILEO HAD BOOTED (THE SD LIGHT CARD STOPS FLICKERING) CYCLE THE POWER ON YOUR GALILEO BY UNPLUGGING IT, THEN PLUGGING IT BACK IN AGAIN.</strong>  WHY? Well, there is a known issue with the Galileo not &quot;announcing&quot; itself on the network the first time it boots.  Doing the power-cycle now increases your odds of the <strong>&quot;Galileo Watcher&quot;</strong> (which we are about to run) being able to see you Galileo.  If the Galileo isn't announcing it self, the Galileo Watcher can't see it.  The power-cycle is to help overcome a bug in the software on the Galileo that prevents it from announcing itself on the first boot.  </p>
+
+<p><img src="images/04040-rungalileowatcher.png?raw=true" alt="04040-RunGalileoWatcher" title="Run Galileo Watcher">
+</p></li>
+<li><p>The first time you run it, you should be prompted to allow <strong>GalileoWatcher.exe</strong> to communicate with the network.  You likely want to permit this on all networks.  If you are concerned with that, be more restrictive.  Make sure to at least enable private networks:</p>
+
+<p><img src="images/04050-allownetworkcommunication.png?raw=true" alt="04050-AllowNetworkCommunication" title="Allow Network Communication">
+</p></li>
+<li><p>When the <strong>&quot;Galileo Watcher&quot;</strong> first opens, it should not &quot;see&quot; any Galileos, and the list should be empty:</p>
+
+<p><img src="images/04060-emptygalileowatcher.png?raw=true" alt="04060-EmptyGalileoWatcher" title="Empty Galileo Watcher">
+</p></li>
+<li><p>However, after your Galileo has been booted for a while, it should start to multicast messages that include it's hostname, IPv4, and IPv6 addresses.  <strong>&quot;Galileo Watcher&quot;</strong> listens for those multicast messages, and once it see it, will display details about your Galileo.  You can right click on an entry to perform actions like Telnet with your Galielo as well:</p>
+
+<p><img src="images/04070-galileowatcheractions.png?raw=true" alt="04070-GalileoWatcherActions" title="Galileo Watcher Actions">
+</p>
+<blockquote>
+<p><strong>Note:  Getting your Galileo to appear in Galileo Watcher is problematic for a new image of Windows on the Galileo.  It will likely take a couple of re-boots of your Galileo before it appears in Galileo Watcher.  Let your Galileo boot completely. Wait another two minutes or so for things to stabilize, then pull the power cord on the Galileo, wait a few seconds, and plug it in again.  It typically takes a re-boot or two before the Galileo appears in Galileo Watcher.  The team is aware of the issues and is actively working to resolve them.  You can periodically update your SD card to the latest Windows Image as well as updating the client tools to make sure you have the latest version.</strong></p>
+</blockquote></li>
+<li><p>If your Galileo appeared in <strong>Galileo Watcher</strong> you can skip this step.  However, if your Galileo <strong>DOES NOT APPEAR</strong> in <strong>Galileo Watcher</strong>, you can attempt to telnet directly to it using it's hostname.  To do so, open a command prompt and run <strong>telnet mygalileo</strong>.  Then, when prompted login as <strong>Administrator</strong> with the password you specified when you are apply-BootMedia.cmd previously.  Finally, you can run <strong>ipconfig</strong> to get the IP Address of your Galileo:</p>
+
+<p><img src="images/04095-manualtelnet.png?raw=true" alt="04095-ManualTelnet" title="Manual Telnet">
+</p></li>
+<li><p>Ok, once the Galileo is appearing in the Galileo Watcher, we can try connecting to it a few different ways.  First, let's try Telnet.  Right click on your Galileo in the <strong>&quot;Galileo Watcher&quot;</strong> and select <strong>&quot;Telnet Here&quot;</strong> from the pop-up menu:</p>
+
+<p><img src="images/04080-telnethere.png?raw=true" alt="04080-TelnetHere" title="Telnet Here">
+</p>
+<blockquote>
+<p><strong>Note:</strong> As mentioned above, If your Galileo isn't appearing in the Galileo Watcher, you can just open a command prompt and type <strong>telnet mygalileo</strong> to telnet to your board</p>
+</blockquote></li>
+<li><p>In the Telnet window, login using:</p>
+
+<ul>
+<li><strong>User Name:</strong> Administrator</li>
+<li><strong>Password:</strong> The password you specified when you ran apply-BootMedia previously</li>
+</ul>
+
+<p><img src="images/04090-telnetlogin.png?raw=true" alt="04090-TelnetLogin" title="Telnet Login">
+</p>
+<blockquote>
+<p><strong>Note:</strong> You could also of course just run the Telnet client and telnet directly to your galileo's host name or IP Address.  In addition, you can use other terminal programs like <a href="http://www.putty.org">PuTTY</a> to telnet into your Galileo.  You do not have to initiate operations from Galileo Watcher.  It just makes it easier to do so. </p>
+</blockquote></li>
+<li><p>Run some commands to investigate the Windows OS on your Galileo, then close the Telnet window when you are done.  Some interesting commands include:</p>
+
+<ul>
+<li><strong>net start</strong> to see the services that are running.  Try other <strong>net &lowast;</strong> other net commands like <strong>net user</strong> to view users, <strong>net share</strong> to view shares, etc.</li>
+<li><strong>tlist -t</strong> to list the tree view of processes running on the Galileo</li>
+<li><strong>kill</strong> - Don't run this unless needed, but can kill a process.  Just speicify the PID found in <strong>tlist</strong> for the process you want to kill.</li>
+<li><strong>netstat -a -n -b</strong> to see the ports it is lisetening on and what processes are doing the listening</li>
+</ul></li>
+<li><p>Back in <strong>Galileo Watcher</strong> right click on your Galileo, and select </p>
+
+<p><img src="images/04100-webbrowserhere.png?raw=true" alt="04100-WebBrowserHere" title="Web Browser Here">
+</p>
+<blockquote>
+<p><strong>Note:</strong> If your Galileo isn't appearing in <strong>Galileo Watcher</strong> you can simply open a browser window and navigate to <strong>http://mygalileo</strong></p>
+</blockquote></li>
+<li><p>Follow the various links to try the different features hosted by the Galileo's web server. The <strong>&quot;File List&quot;</strong> option doesn't appear to be function, but the other's give you some interesting info.  Close the browser when you are done:</p>
+
+<p><img src="images/04110-webpages.png?raw=true" alt="04110-WebPages" title="Web Pages">
+</p></li>
+<li><p>Lastly, back in <strong>Galileo Watcher</strong>, right click on your Galileo, and select <strong>&quot;Open Network Share&quot;</strong> from the pop-up menu:</p>
+
+<p><img src="images/04120-opennetworkshare.png?raw=true" alt="04120-OpenNetworkShare" title="Open Network Share">
+</p>
+<blockquote>
+<p><strong>Note:</strong> If your Galileo isn't appearing in <strong>Galileo Watcher</strong> you can open a File Explorer window, and navigate to <strong>\mygalileo\c$</strong> </p>
+</blockquote></li>
+<li><p>You should be prompted to authenticate, again use the <strong>Administrator</strong> user name and the <strong>password you specified when you ran apply-BootMedia.cmd</strong>:</p>
+
+<p><img src="images/04130-authenticate.png?raw=true" alt="04130-Authenticate" title="Authenticate">
+</p></li>
+<li><p>Once authenticated you should see the contents of your Galileo's SD card.  <strong>Poke around CAREFULLY</strong>, and <strong>close the explorer window when you are done</strong>:</p>
+
+<p><img src="images/04140-galileofiles.png?raw=true" alt="04140-GalileoFiles" title="Galileo Files">
+</p></li>
+<li><p>There is actually an FTP service running on the Galileo as well, but the Galileo Watcher doesn't have a shortcut to it.  You can use the ftp client of your choice to FTP into the Galileo, again using the <strong>Administrator</strong> username and password you specified during apply-BootMedia.cmd.  </p>
+
+<p><img src="images/04150-ftpclient.png?raw=true" alt="04150-FTPClient" title="FTP Client">
+</p></li>
+</ol>
+
+<p><a name="running-your-first-wiring-app-on-the-galileo"></a></p>
+
+<h2 id="Running_your_first_Wiring_App_on_the_Galileo">Running your first &quot;Wiring App&quot; on the Galileo</h2>
+
+<p>Now that our Galileo is setup and running windows, we can use Visual Studio to write a C++ console app to run on it.  However, the &quot;Windows Devloper Program for IoT - Microsoft Installer (MSI)&quot; file put a project template on our system that we can use that allows us to not only write a C++ console app, but to also leverage the Gallileo-SDK and the Wiring APIs.  That means that our C++ app can interact with the digital and analog pins on the the board as well.  In this task, we'll create the Visual Studio version of the Arduino &quot;Blink&quot; app we ran in the first lab.  </p>
+
+<ol>
+<li><p>Open Visual Studio 2013 (or Visual Studio Express 2013 for Windows Desktop).  From the menu bar select <strong>&quot;File&quot;</strong> | <strong>&quot;New&quot;</strong> | <strong>&quot;Project...&quot;</strong>. </p></li>
+<li><p>In the <strong>&quot;New Project&quot;</strong> window, in the tree of <strong>&quot;Installed Templates&quot;</strong> along the left, , find and expand <strong>&quot;Visaul C++&quot;</strong> | <strong>&quot;Windows for IoT&quot;</strong>, and select the <strong>&quot;Galileo Wiring App&quot;</strong> project template.  Give the project a name (I Used <strong>&quot;HelloGalileo&quot;</strong> and a location), and click <strong>&quot;OK&quot;</strong> to create the project:</p>
+
+<p><img src="images/05010-newgalileowiringapp.png?raw=true" alt="05010-NewGalileoWiringApp" title="New Galileo Wiring App">
+</p></li>
+<li><p>In the <strong>Solution Explorer</strong> window, right click on the <strong>HelloGalileo</strong> project (or whatever you called your project) and select **&quot;Manage NuGet Packages...&quot; from the pop-up menu:</p>
+
+<p><img src="images/05020-managenugetpackages.png?raw=true" alt="05020-ManageNuGetPackages" title="Manage NuGet Packages">
+</p></li>
+<li><p>In the <strong>&quot;HelloGalileo - Manage NuGet Packages&quot;</strong> window, expand <strong>&quot;Installed packages&quot;</strong> and select <strong>&quot;All&quot;</strong>. Notice that the <strong>&quot;Galileo C++ SDK&quot;</strong> NuGet Package has already been installed.  This adds the <strong>&quot;Wiring API&quot;</strong> for the Intel Galileo to what would otherwise be a normal C++ console application. <strong>Close the NuGet Package Manager</strong>. 
+<img src="images/05030-galileosdkpackage.png?raw=true" alt="05030-GalileoSDKPackage" title="Galileo-SDK Package">
+</p></li>
+<li><p>Again, right-click on the <strong>&quot;HelloGalileo&quot;</strong> Project in the Solution Explorer and select <strong>&quot;Properties&quot;</strong> from the pop-up menu:</p>
+
+<p><img src="images/05040-propertiesmenu.png?raw=true" alt="05040-PropertiesMenu" title="Properties Menu Item">
+</p></li>
+<li><p>In the <strong>&quot;HelloGalileo Property Pages&quot;</strong> window, along the left hand side, expand <strong>&quot;Configuration Properties&quot;</strong> | <strong>&quot;Debugging&quot;</strong> and review the remote debugging configuration.  Note that the <strong>&quot;Remote Server Name&quot;</strong> defaults to <strong>&quot;mygalileo&quot;</strong>.  If you named your Galileo something different when you ran <strong>apply-BootMedia.cmd&quot;</strong> previously, you'll want to change the <strong>&quot;Remote Server Name&quot;</strong> to match your Galileo's hostname.  Regardless, close the <strong>&quot;HelloGalileo Property Pages&quot;</strong> window when you are done. </p>
+
+<p><img src="images/05050-debuggingconfiguration.png?raw=true" alt="05050-DebuggingConfiguration" title="Remote Debugging Configuration">
+</p></li>
+<li><p>Next, in the <strong>Solution Explorer</strong> window, under the <strong>&quot;HelloGalileo&quot;</strong> project, expand <strong>&quot;Source Files&quot;</strong> and double click on <strong>&quot;Main.cpp&quot;</strong> to open it:</p>
+
+<p><img src="images/05060-maincpp.png?raw=true" alt="05060-MainCPP" title="Main.CPP">
+</p></li>
+<li><p>Here is the default code for Main.cpp, notice that it has a lot of similarities to the Arduino Blink sketch we ran in the first lab.  The biggest differences are:</p>
+
+<ul>
+<li>The <strong>#include</strong>s at the top of the file that pull in the C++ precompiled headers as well as the arduino functionality fro the Galileo-SDK.<br></li>
+<li>the <strong>&quot;_tmain()</strong> method.  This is the main entry point.  It calls <strong>RunArduinoSketch()</strong> which in turn initializes the Arduino funcationality, calls the <strong>setup()</strong> method, and setups up an infite loop that calls the <strong>loop()</strong> method repeatedly.<br></li>
+<li>The <strong>Log()</strong> method is used to log messages to STDOUT as well as to a debugger if one is attached. That means that when we are debugging in Visual Studio, we'll see the <strong>Log()</strong> messages in the <strong>Output</strong> window.<br></li>
+<li>Otherwise, the code is identitcal to the Arduino &quot;Blink&quot; sketch.</li>
+</ul>
+
+<!-- mark:4-11,27,30 -->
+
+<span class="codelanguage">C++</span><pre><code class="C++"><span style="color:#008000">// Main.cpp : Defines the entry point for the console application.</span>
+<span style="color:#008000">//</span>
+
+<strong class="markLine">#include <span style="color:#8B0000">&quot;stdafx.h&quot;</span></strong>
+<strong class="markLine">#include <span style="color:#8B0000">&quot;arduino.h&quot;</span></strong>
+<strong class="markLine"></strong>
+<strong class="markLine"><span style="color:#0000FF">int</span> _tmain(<span style="color:#0000FF">int</span> argc, _TCHAR* argv[])</strong>
+<strong class="markLine">{</strong>
+<strong class="markLine">     <span style="color:#0000FF">return</span> RunArduinoSketch();</strong>
+<strong class="markLine">}</strong>
+<strong class="markLine"></strong>
+<span style="color:#0000FF">int</span> led = 13;  <span style="color:#008000">// This is the pin the LED is attached to.</span>
+
+<span style="color:#0000FF">void</span> setup()
+{
+     <span style="color:#008000">// TODO: Add your code here</span>
+
+     pinMode(led, OUTPUT);       <span style="color:#008000">// Configure the pin for OUTPUT so you can turn on the LED.</span>
+}
+
+<span style="color:#008000">// the loop routine runs over and over again forever:</span>
+<span style="color:#0000FF">void</span> loop()
+{
+     <span style="color:#008000">// TODO: Add your code here</span>
+
+     digitalWrite(led, LOW);    <span style="color:#008000">// turn the LED off by making the voltage LOW</span>
+<strong class="markLine">     Log(L<span style="color:#8B0000">&quot;LED OFF\n&quot;</span>);</strong>
+     delay(1000);               <span style="color:#008000">// wait for a second</span>
+     digitalWrite(led, HIGH);   <span style="color:#008000">// turn the LED on by making the voltage HIGH</span>
+<strong class="markLine">     Log(L<span style="color:#8B0000">&quot;LED ON\n&quot;</span>);</strong>
+     delay(1000);               <span style="color:#008000">// wait for a second</span>
+}
+</code></pre></li>
+<li><p>If you have a physical LED you can connect to pin 13 and ground just as we did at the very end of the first lab, you can run the defualt <strong>Main.cpp</strong> code as is.  However, if you want to blink the <strong>ON BOARD LED</strong> we need to make some changes.  Why?  Well the current Gallieo_SDK doesn't map the onboard LED to pin 13 the way the default implementation does.   To blink the onboard LED, we need to access the boards &quot;General Purpose IO&quot; or GPIO pins directly.  </p></li>
+<li><p>Replace the contents of the <strong>&quot;Main.cpp&quot;</strong> file with the following code.  This code is very similar to the default <strong>&quot;Main.cpp&quot;</strong> with a few exceptions:</p>
+
+<ul>
+<li>On line 12 we map the led variable to <strong>LED_BUILTIN</strong> instead of 13.  This maps to the GPIO pin that the onboard LED is connected to. </li>
+<li>on line 18, we use the <strong>GpioSetDir()</strong> method instead of <strong>pinMode()</strong> to set the <strong><em>direction</em></strong> (INTPUT or OUTPUT) of the pin.<br></li>
+<li>on lines 26 and 29, we use the <strong>GpioWrite()</strong> method instead of <strong>digitalWrite()</strong> to send a signal to the pin.  <strong>GpioWrite()</strong> uses a different pin mapping that the arduino <strong>digitalWrite()</strong>.</li>
+</ul>
+
+<!-- mark:12,18,26,29 -->
+
+<span class="codelanguage">C++</span><pre><code class="C++"><span style="color:#008000">// Main.cpp : Defines the entry point for the console application.</span>
+<span style="color:#008000">//</span>
+
+#include <span style="color:#8B0000">&quot;stdafx.h&quot;</span>
+#include <span style="color:#8B0000">&quot;arduino.h&quot;</span>
+
+<span style="color:#0000FF">int</span> _tmain(<span style="color:#0000FF">int</span> argc, _TCHAR* argv[])
+{
+     <span style="color:#0000FF">return</span> RunArduinoSketch();
+}
+
+<strong class="markLine"><span style="color:#0000FF">int</span> led = LED_BUILTIN;  <span style="color:#008000">// LED_BUILTIN is a C++ #define macro that maps to the onboard LED</span></strong>
+
+<span style="color:#0000FF">void</span> setup()
+{
+     <span style="color:#008000">// TODO: Add your code here</span>
+
+<strong class="markLine">     GpioSetDir(led, OUTPUT);       <span style="color:#008000">// Configure the pin for OUTPUT so you can turn on the LED.</span></strong>
+}
+
+<span style="color:#008000">// the loop routine runs over and over again forever:</span>
+<span style="color:#0000FF">void</span> loop()
+{
+     <span style="color:#008000">// TODO: Add your code here</span>
+
+<strong class="markLine">     GpioWrite(led, LOW);    <span style="color:#008000">// turn the LED off by making the voltage LOW</span></strong>
+     Log(L<span style="color:#8B0000">&quot;LED OFF\n&quot;</span>);
+     delay(1000);               <span style="color:#008000">// wait for a second</span>
+<strong class="markLine">     GpioWrite(led, HIGH);   <span style="color:#008000">// turn the LED on by making the voltage HIGH</span></strong>
+     Log(L<span style="color:#8B0000">&quot;LED ON\n&quot;</span>);
+     delay(1000);               <span style="color:#008000">// wait for a second</span>
+}
+</code></pre></li>
+<li><p>Ok, let's run it.  In the Visual Studio 2013 toolbar, click the <strong>&quot;Remote Windows Debugger&quot;</strong> button to debug the program on the Galileo:</p>
+
+<p><img src="images/05070-remotewindowsdebugger.png?raw=true" alt="05070-RemoteWindowsDebugger" title="Remote Windows Debugger">
+</p></li>
+<li><p>If you monitor the status bar along the bottom of Visual Studio, you can see it change from <strong>&quot;Deploy Started...&quot;</strong> to <strong>&quot;Deploy Succeeded&quot;</strong>, then in the <strong>Output</strong> window, you should start to see the <strong>Log()</strong> messages coming in:</p>
+
+<p><img src="images/05080-deploystarted.png?raw=true" alt="05080-DeployStarted" title="Deploy Started">
+</p>
+
+<p><img src="images/05082-deploysucceeded.png?raw=true" alt="05082-DeploySucceeded" title="Deploy Succeeded">
+</p>
+
+<p><img src="images/05084-outputwindow.png?raw=true" alt="05084-OutputWindow" title="Log Messages in Output Window">
+</p></li>
+<li><p>And of course if you look on the Galileo, you should see the onboard LED blinking on and off:</p>
+
+<p><img src="images/05100-ledoff.png?raw=true" alt="05100-LEDOff" title="LED Off">
+</p>
+
+<p><img src="images/05090-ledon.png?raw=true" alt="05090-LEDOn" title="LED On">
+</p></li>
+</ol>
+
+<p><a name="Task6"></a></p>
+
+<h2 id="Shutting_Down_your_Galileo">Shutting Down your Galileo</h2>
+
+<p>Just like any other Windows computer, your Galileo will be much happier in general if you shut it down properly, rather than just pulling the power cord out. Shutting it down properly will help it boot faster next time as a scan of the Micro SD card won't be needed. </p>
+
+<ol>
+<li><p>Telnet into your Galileo using the techniques described above. </p></li>
+<li><p>From the telnet prompt issue the following command to shutdown your galileo immediately:</p>
+
+<p>-The <strong>/s</strong> command line switch does a shutdown.  The Galileo should in fact be powered off when it is done.  If you prefer to resetart, use <strong>/r</strong></p>
+
+<p>-The <strong>/t 0</strong> command line switch sets the &quot;time&quot; to &quot;0&quot; seconds meaning that it will shutdown immediately, with no delay.  </p>
+
+<span class="codelanguage">PowerShell</span><pre><code class="PowerShell">shutdown /s /t 0
+</code></pre>
+
+<p><img src="images/05110-shutdown.png?raw=true" alt="05110-Shutdown" title="Shutdown">
+</p></li>
+<li><p>When the shutdown process completes, the Galileo should power off.  If it doesn't just pull the power cord.  </p></li>
+</ol>
+
+</div>
+</body>
+</html>
