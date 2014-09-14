@@ -28,7 +28,7 @@ If you went through the first lab, "HOL - 01 - Unboxing and Running Your Galileo
 	- [Day 2 Keynote](http://channel9.msdn.com/Events/Build/2014/KEY02) at about [02:02:18](http://channel9.msdn.com/Events/Build/2014/KEY02#time=2h02m18s) - Steve Guggenhiemer talks about .NET MicroFramework and Embedded Devices
 	- [Windows and the Internet of Things](http://channel9.msdn.com/Events/Build/2014/2-511)
 	- [Simplifying Hardware Development for Windows Platforms](http://channel9.msdn.com/Events/Build/2014/2-536)
-	- http://channel9.msdn.com/Events/Build/2014/3-635
+	- [Internet of Things with Azure Service Bus](http://channel9.msdn.com/Events/Build/2014/3-635)
 
 <a name="Prerequisites" />
 ## Prerequisites ##
